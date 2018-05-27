@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+.container{
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.logo{
+	margin: 0 auto;
+}
+
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+	  margin-top: 50px;
+}
+
+a:link{
+	color: black;
+	text-decoration:none;
+}
+
+nav{
+	text-align: center;
+}
+
+nav ul {
+	text-decoration: none;
+    list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 30px;
+}
+
+nav ul li a:link{
+	font-size: 18px;
+	color: black;
+	text-decoration:none;
+}
+
+nav ul li a:hover{
+	color: #e21e26;
+}
+
+.gallery{
+	height: 480px;
+}
+
+.gallery img{
+	object-fit: cover;
+	float: left;
+	width: 25%;
+  height: 170px;
+	padding: 1px;
+}
+
+.menuBox{
+  display: flex;
+	background-color: #e5e5e5;
+}
+
+.box{
+  
+	border-width: 5px;
+	border-color: #555555;
+	margin:2.5%;
+    width:20%;
+    float:left; 
+    padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+
+.clear{
+	clear: both;
+}
+
+.boxButton{
+ 
+  font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+	border: none;
+	background-color: #c6c6c6;
+	border-radius: 12px;
+}
+
+.boxButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.boxButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.boxButton:hover span {
+  padding-right: 25px;
+}
+
+.boxButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer{
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align: center;
+}
